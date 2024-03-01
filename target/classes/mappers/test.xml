@@ -2,7 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="test">
+<!--namespace是mapper的唯一标识-->
+<mapper namespace="com.gelin.mapper.IUserMapper">
+    <!--id是sql语句的唯一标识-->
+    <!--resultType指向映射类型或者实体对象-->
     <select id="selectOne" resultType="String">
         select 'success'
     </select>
